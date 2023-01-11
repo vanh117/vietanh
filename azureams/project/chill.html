@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reponsive.css" />
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="intro.html">Giới Thiệu</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            
+   <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="https://i.ytimg.com/vi/TX4W6QpDeCk/maxresdefault.jpg" width="100" height="100">
+                                <span class="cart-item-title">DIY</span>
+                            </div>
+                            <span class="cart-price cart-column">50000đ</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="https://i.pinimg.com/474x/33/b0/0b/33b00b8ce0cd9588626c94685c67b73d.jpg" width="100" height="100">
+                                <span class="cart-item-title">Bộ xương</span>
+                            </div>
+                            <span class="cart-price cart-column">850000đ</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                           
+                            <span class="cart-total-price">90000VNĐ</span>
+                        </div>
+                    </div>
+
+
+                   
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- content -->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://s23775.pcdn.co/wp-content/uploads/sites/44/2018/10/How-to-Hang-Halloween-Decorations-Featured-Image-1200x630.jpg" alt="">
+                
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Đồ trang trí</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">50000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://media1.popsugar-assets.com/files/thumbor/QOcwfN2eaCsXKcttrkhZ-blGJ1Y/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/08/27/610/n/1922794/3b6665515f47b792c5e587.65397496_/i/target-halloween-decorations-2020.jpg" alt="">
+                
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Đồ trang trí căn phòng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">300000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://spirit.scene7.com/is/image/Spirit/Cat_Tile_2021_Halloween_Decorations_Shop_Props?$Fullsize%5FLessComp$" alt="">
+                
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Búp bê ma quái</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">200000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/funny-haloween-candy-in-a-spiderweb-bowl-royalty-free-image-1602611912.jpg" alt="">
+                
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Kẹo eyeballs</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">90000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ghk100120halloween-034-1602254495.jpg?crop=1.00xw:0.668xh;0,0.223xh&resize=640:*">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Tranh
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">700000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://i.ytimg.com/vi/TX4W6QpDeCk/maxresdefault.jpg">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">DIY</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">200000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="https://i.pinimg.com/474x/33/b0/0b/33b00b8ce0cd9588626c94685c67b73d.jpg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Bộ xương</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">850000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="https://i.pinimg.com/originals/f9/21/43/f92143974cec18a82709aa2926f5d255.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Thiệp</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">20000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="box-container">
+    
+        <div class="box aos-init aos-animate" data-aos="fade-right">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> vietnam </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+        </div>
+
+        
+
+        <div class="box aos-init aos-animate" data-aos="fade-up">
+            <h3>contact us</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +037-564-1072 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +090-510-4080 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> vanhleg117@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Hanoi - Vietnam </a>
+        </div>
+
+        <div class="box aos-init" data-aos="fade-left">
+            <h3>contact us</h3>
+            <div class="social-footer">
+                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100072798125405">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/vanh117/andyngo.git">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+
+    <script src="product.js"></script>
+    
+</body>
+</html>

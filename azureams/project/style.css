@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    background-color: black;
+    min-height: 100vh;
+    width: auto;
+    color:#fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav .menu-ing{
+  width: 25px;
+  margin-right: 30px;
+  cursor: pointer;  
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul{
+    display: flexbox;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: background 0.5s margin-left 0.5s ;
+}
+.halo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+.halow{
+    position: absolute;
+    top: 100%;
+    left:250%;
+    transform: translateX(-50%);
+    width: 700px;
+
+}
+.text-container{
+    max-width: 600px;
+    /* margin-top: 7%;
+    margin-left: 50%; */
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    font-size: 20px;
+    
+}
+/* .text-container a{
+  font-size: 80px;
+  background: #00986f;
+  padding:14px 50px;
+
+}
+.text-container h2{
+    font: 80px;
+    font-weight: 400;
+} */
+.text-container a{
+ 
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 900px;
+    width: 200px;
+}
+.text-container .word{
+ 
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 900px;
+    width: 275px;
+}
+.text-container h2{
+   
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-left: 900px;
+    width: 275px;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 360px;
+    
+}
+.control .line{
+    width: 250px;
+    height: 4px;
+    background: #fff;
+    margin:0 20px ;
+    border: 2px;
+}
+.control .line span{
+    width: 80%;
+    height: 8px;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: purple;
+display: block;
+}
+.active{
+    background: green;
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+}
+.on{
+    opacity: 1;
+
+}
+.jumpscare{
+    position:fixed;
+    top: 50%;
+    width: 40%;
+    transition: opasity 0.5s;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    display: none;
+}
+.script-header {
+    font-weight: 100;
+   color: lightyellow;
+    font-family: fantasy;
+    font-size: 30px;
+}
+.intro{
+    text-align: center;
+}
+.word{
+    color: greenyellow;
+    font-size: 20px;
+}
+/* .product{
+    width: 90%;
+    background-color: white;
+}
+#pumkin{
+    width: 300px;
+}
+#costumes{
+    width: 300px;
+}
+#food{
+    width: 300px;
+}
+#tree{
+    width: 300px;
+}
+#candy{
+    width: 300px;
+}
+#wand{
+    width: 300px;
+}
+#pumkin :hover{
+    cursor: pointer;
+
+}
+.product li :hover{
+    cursor: pointer;
+    background-color: red;
+} */
+.noidung {
+   /* height: 200px; */
+   width: fixed;
+   
+ }
+ .zoomout img {
+  /* height: 500px; */
+   /* width: 500px; */
+   
+   width: 300px;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -ms-transition: all 2s ease;
+   transition: all 2s ease;
+   
+ }
+ .zoomout img:hover {
+   height: 500px;
+   width: 100%;
+ }
+ .product{
+    width: 90%;
+    text-align: center;
+    /* background-color:gray; */
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+ a{
+    width: 200px;
+    height: 100px;
+    border: red;
+    transition: color .2s ease-in;
+    transition-property: color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    color: gray;
+ }
+ .ran{
+    width: 200px;
+    border: red;
+    border-radius: 3px;
+    text-align: center;
+    height: 30px;
+    background-color: red;
+    border: solid;
+    text-align: center;
+    margin-left: 43%;
+    font-size: 25px;
+ }
+ /* .random{
+    width: 100px;
+    border: red;
+    border-radius: 3px;
+    text-align: center;
+    height: 30px;
+    background-color: red;
+    border: solid;
+    margin-right: 30px;
+    position: relative;
+    color: white;
+ } */
+ .inspiration{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    background-color: black;
+ }
+ .project{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    background-color: black;
+ }
+#va{
+    display: center;
+}
+#vanh2{
+    list-style: none;
+  }
+#vanh{
+    text-decoration: none;
+    text-align: center;
+    font: 50px;
+  }  
+  li{
+    list-style: none;
+  }
+  #toang{
+    margin-top: 20px;
+  }
+  #btn{
+    margin-top: 20px;
+  }
+  #vanh3{
+    text-decoration: none;
+    
+  }
+  .fuck{
+    width: 200px;
+    border: red;
+    border-radius: 3px;
+    text-align: center;
+    height: 30px;
+    background-color: red;
+    border: solid;
+    text-align: center;
+    margin-left: 41%;
+    font-size: 25px;
+  }
